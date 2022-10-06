@@ -1,0 +1,113 @@
+[
+  {
+    "productCode": "MJUM8066-GYDZ",
+    "name": "Lambswool Crew Neck Jumper",
+    "vendor": "Sunspel",
+    "price": 75,
+    "alt": "lambswool crew neck jumper",
+    "image": "/products/pdp1.jpeg",
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Púrpura Pálido" },
+      { "color": "#488266", "title": "Musgo Verde" }
+    ],
+    "sizeOptions": ["PP", "P", "M", "G", "GG"],
+    "wishlist": true,
+    "tags": ["sample"],
+    "gallery": [
+      { "image": "/products/pdp1.jpeg", "alt": "pdp description 1" },
+      { "image": "/products/pdp2.jpeg", "alt": "pdp description 2" },
+      { "image": "/products/pdp3.jpeg", "alt": "pdp description 3" },
+      { "image": "/products/pdp4.jpeg", "alt": "pdp description 4" }
+    ],
+    "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
+  },
+  {
+    "name": "Camisa Azul Escuro",
+    "price": 75,
+    "alt": "classic t-shirt 1",
+    "image": "/products/shirt1.jpg",
+    "tags": ["shirt", "men"]
+  },
+  {
+    "name": "Camisa Marrom Escuro",
+    "price": 75,
+    "alt": "classic t-shirt 2",
+    "image": "/products/shirt2.jpg",
+    "tags": ["shirt", "men"]
+  },
+  {
+    "name": "Camisa Verde Escuro",
+    "price": 75,
+    "alt": "classic t-shirt 3",
+    "image": "/products/shirt3.jpg",
+    "tags": ["shirt", "men"]
+  },
+  {
+    "name": "Blusa e Calça, com o design marrom de luxo",
+    "price": 13.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman1.jpeg",
+    "tags": ["woman"],
+    "meta": "+ 2 cores"
+  },
+  {
+    "name": "Blusa de crochê",
+    "price": 15.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman2.jpeg",
+    "tags": ["woman"]
+  },
+  {
+    "name": "Blusa preta de botões",
+    "price": 13.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman3.jpeg",
+    "tags": ["woman"],
+    "meta": "+ 2 cores"
+  },
+  {
+    "name": "Moletom preta de crochê",
+    "price": 15.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman4.jpeg",
+    "tags": ["woman"]
+  },
+  {
+    "name": "Blusa branca de crochê",
+    "price": 15.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman5.jpeg",
+    "tags": ["woman"],
+    "originalPrice": 31.5
+  },
+  {
+    "name": "Blusa branca de luxo",
+    "price": 21,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman6.jpeg",
+    "tags": ["woman"]
+  },
+  {
+    "name": "Blusa branca de crochê",
+    "price": 15.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman3.jpeg",
+    "tags": ["woman"]
+  },
+  {
+    "name": "T-shirt gráfica de corte descontraído",
+    "price": 15.9,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman2.jpeg",
+    "tags": ["woman"],
+    "originalPrice": 31.5
+  },
+  {
+    "name": "Blusa branca",
+    "price": 21,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/woman1.jpeg",
+    "tags": ["woman"]
+  }
+]

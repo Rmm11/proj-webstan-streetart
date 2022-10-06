@@ -1,0 +1,170 @@
+{
+  "currencyList": [
+    { "value": "AUS", "label": "Australia (AUS $)" },
+    { "value": "CAD", "label": "Canada (CAD $)" },
+    { "value": "BR", "label": "Brasil (BR R$)" },
+    { "value": "USD", "label": "United States (US $)" },
+    { "value": "EUR", "label": "Germany (EUR €)" },
+    { "value": "HKD", "label": "Hong Kong (HKD $)" }
+  ],
+  "languageList": [
+    { "value": "english", "label": "English" },
+    { "value": "portuguese", "label": "Portuguese" },
+    { "value": "german", "label": "Deutsch" },
+    { "value": "mandarin", "label": "普通话" }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/MatterDesign/",
+    "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
+    "twitter": "https://twitter.com/hellomatter",
+    "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
+  },
+  "paymentOptions": {
+    "visa": true,
+    "mastercard": true,
+    "amex": true
+  },
+  "footerLinks": [
+    {
+      "subTitle": "Informações",
+      "links": [
+        {
+          "text": "Sobre nós",
+          "link": "/about"
+        },
+        {
+          "text": "Comentários",
+          "link": "/blog"
+        },
+        {
+          "text": "Política de Privacidade",
+          "link": "/support#policy"
+        }
+      ]
+    },
+    {
+      "subTitle": "Suporte",
+      "links": [
+        {
+          "text": "FAQ",
+          "link": "/faq"
+        },
+        {
+          "text": "Contate-nos",
+          "link": "/support#contact"
+        },
+        {
+          "text": "Envio e devoluções",
+          "link": "/support#returns"
+        }
+      ]
+    }
+  ],
+  "headerLinks": [
+    {
+      "menuLabel": "Loja",
+      "menuLink": "/shop",
+      "category": [
+        {
+          "categoryLabel": "Feminino",
+          "submenu": [
+            {
+              "menuLabel": "Todas as roupas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Blusas e camisetas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Jaquetas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Calças",
+              "menuLink": "/shop"
+            }
+          ]
+        },
+        {
+          "categoryLabel": "Masculino",
+          "submenu": [
+            {
+              "menuLabel": "Todas as roupas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Blusas e camisetas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Jaquetas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Calças",
+              "menuLink": "/shop"
+            }
+          ]
+        },
+        {
+          "categoryLabel": "Acessórios",
+          "submenu": [
+            {
+              "menuLabel": "Bonés e Toucas",
+              "menuLink": "/shop"
+            },
+            {
+              "menuLabel": "Bolsas e Mochilas",
+              "menuLink": "/shop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuLabel": "Comentários",
+      "menuLink": "/blog",
+      "category": null
+    },
+    {
+      "menuLabel": "Sobre nós",
+      "menuLink": "/about",
+      "category": null
+    }
+  ],
+  "filters": [
+    {
+      "category": "Cores",
+      "items": [
+        { "name": "Preto", "value": true },
+        { "name": "Verde", "value": false },
+        { "name": "Azul Escuro", "value": false },
+        { "name": "Azul", "value": true },
+        { "name": "Cinza", "value": false },
+        { "name": "Vermelho", "value": false }
+      ]
+    },
+
+    {
+      "category": "Tamanho",
+      "items": [
+        { "name": "PPP", "value": false },
+        { "name": "PP", "value": false },
+        { "name": "P", "value": false },
+        { "name": "M", "value": false },
+        { "name": "G", "value": false },
+        { "name": "GG", "value": false },
+        { "name": "GGG", "value": false }
+      ]
+    },
+    {
+      "category": "Gêneros",
+      "items": [
+        { "name": "Masculino", "value": false },
+        { "name": "Feminino", "value": false },
+        { "name": "Unisex", "value": false }
+      ]
+    }
+  ]
+}
