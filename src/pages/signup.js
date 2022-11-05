@@ -41,12 +41,12 @@ const SignupPage = (props) => {
     const tempError = { ...errorState };
 
     if (isEmpty(signupForm.firstName) === true) {
-      tempError.firstName = 'Campo requerido';
+      tempError.firstName = 'Campo obrigatório';
       validForm = false;
     }
 
     if (isEmpty(signupForm.lastName) === true) {
-      tempError.lastName = 'Campo requerido';
+      tempError.lastName = 'Campo obrigatório';
       validForm = false;
     }
 

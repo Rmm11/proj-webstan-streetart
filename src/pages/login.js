@@ -42,7 +42,7 @@ const LoginPage = (props) => {
     }
 
     if (isEmpty(loginForm.senha) === true) {
-      tempError.senha = 'Campo requerido';
+      tempError.senha = 'Campo obrigatório';
       validForm = false;
     } else {
       tempError.senha = '';
@@ -105,7 +105,7 @@ const LoginPage = (props) => {
               labelName={'Senha'}
               error={errorForm.password}
             />
-            <div className={styles.forgotSenhaPasswordContainer}>
+            <div className={styles.forgotPasswordContainer}>
               <Link to={'/forgot'} className={styles.forgotLink}>
                 Esqueci a senha
               </Link>

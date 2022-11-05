@@ -10,16 +10,16 @@ const OrderConfirmPage = (props) => {
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>Thank You!</h1>
+          <h1>Muito Obrigado!</h1>
           <p>
-            We are now processing your order. If you have any concerns feel free
-            to email us at customerservice@example.com
+            Já estamos processando seu pedido. Se você tiver alguma dúvida,
+            sinta-se à vontade para nos enviar um e-mail para streeart@gmail.com
           </p>
           <div className={styles.actionContainer}>
             <ActionCard
-              title={'Order Status'}
+              title={'Status do pedido'}
               icon={'delivery'}
-              subtitle={'Check your order status'}
+              subtitle={'Verifique o status do seu pedido'}
               link={'/account/orders'}
               size={'lg'}
             />
@@ -39,9 +39,9 @@ const OrderConfirmPage = (props) => {
             />
 
             <ActionCard
-              title={'Contact Us'}
+              title={'Contate-nos'}
               icon={'phone'}
-              subtitle={'Reach out to us'}
+              subtitle={'Estenda a mão para nós'}
               link={'/support#contact'}
             />
           </div>
