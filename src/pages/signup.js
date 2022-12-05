@@ -11,6 +11,7 @@ import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';
 import FormInputField from '../components/FormInputField/FormInputField';
 import Button from '../components/Button';
+import axios from 'axios';
 
 const SignupPage = (props) => {
   const initialState = {
@@ -35,7 +36,7 @@ const SignupPage = (props) => {
     setSignupForm(tempForm);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     let validForm = true;
     const tempError = { ...errorState };
@@ -64,6 +65,11 @@ const SignupPage = (props) => {
 
     if (validForm === true) {
       setErrorForm(errorState);
+      const response = await axios.post(
+        'http://localhost:9797/users/register',
+        signupForm
+      );
+      console.log(response.data);
       navigate('/accountSuccess');
       window.localStorage.setItem('key', 'sampleToken');
       //create account endpoint

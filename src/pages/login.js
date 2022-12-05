@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
+import axios from 'axios';
 import { validateEmail, isEmpty } from '../helpers/general';
 import * as styles from './login.module.css';
 
@@ -11,12 +12,12 @@ import Button from '../components/Button';
 const LoginPage = (props) => {
   const initialState = {
     email: '',
-    senha: '',
+    password: '',
   };
 
   const errorState = {
     email: '',
-    senha: '',
+    password: '',
   };
 
   const [loginForm, setLoginForm] = useState(initialState);
@@ -28,7 +29,7 @@ const LoginPage = (props) => {
     setLoginForm(tempForm);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     let validForm = true;
     const tempError = { ...errorForm };
@@ -41,26 +42,34 @@ const LoginPage = (props) => {
       tempError.email = '';
     }
 
-    if (isEmpty(loginForm.senha) === true) {
-      tempError.senha = 'Campo obrigatório';
+    if (isEmpty(loginForm.password) === true) {
+      tempError.password = 'Campo obrigatório';
       validForm = false;
     } else {
-      tempError.senha = '';
+      tempError.password = '';
     }
 
     if (validForm === true) {
       setErrorForm(errorState);
 
-      //mock login
-      if (loginForm.email !== 'error@example.com') {
-        navigate('/conta');
-        window.localStorage.setItem('key', 'sampleToken');
+      const response = await axios.post(
+        'http://localhost:9797/users/login',
+        loginForm
+      );
+      if (response.status === 201) {
+        navigate('/');
       } else {
         window.scrollTo(0, 0);
         setErrorMessage(
           'Não existe tal conta associada a este endereço de e-mail'
         );
       }
+      //mock login
+      // if (loginForm.email !== 'error@example.com') {
+      //   navigate('/conta');
+      //   window.localStorage.setItem('key', 'sampleToken');
+      // } else {
+      // }
     } else {
       setErrorMessage('');
       setErrorForm(tempError);
@@ -98,7 +107,7 @@ const LoginPage = (props) => {
             />
 
             <FormInputField
-              id={'senha'}
+              id={'password'}
               value={loginForm.password}
               handleChange={(id, e) => handleChange(id, e)}
               type={'password'}
